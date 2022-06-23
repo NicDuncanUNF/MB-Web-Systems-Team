@@ -18,5 +18,6 @@ namespace SportsStore.Models
         public decimal Price { get; set; }
         [Required(ErrorMessage = "Please specify a category")]
         public string Category { get; set; }
+        //TODO Add an entry for a product image using a web link
     }
 }

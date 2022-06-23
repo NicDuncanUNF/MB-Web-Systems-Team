@@ -4,12 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css"/>
-    <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css" />
-    <title>SportsStore</title>
+    <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css"/>
+    <title>Matterhackers</title>
 </head>
 <body>
-    <nav class="navbar navbar-inverse bg-info justify-content-between">
-        <a class="navbar-brand text-white" href="#">SPORTS STORE</a>
+    <!--Used !important tag to enforce the color change-->
+    <nav class="navbar navbar-inverse bg-info" style="background-color: darkblue!important">
+        <!--Made the logo and title float left while the Cart Summary button floats right-->
+        <div class="float-left">
+            <!--Referenced the stache of added icons stored on the iconography folder-->
+            <img src="~/Iconography/MH_Logo.png" height="100" width="100">
+            <a class="navbar-brand text-white" href="#">Matterhackers</a>
+        </div>
         <div class="float-right">
             @await Component.InvokeAsync("CartSummary")
         </div>
