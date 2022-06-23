@@ -6,7 +6,7 @@
     <thread>
         <tr>
             <th class="text-center">Quantity</th>
-            <th>Item</th>
+            <th class="text-right">Image</th>
             <th class="text-right">Price</th>
             <th class="text-right">Subtotal</th>
         </tr>
@@ -15,12 +15,13 @@
     <tbody>
         @foreach (var line in Model.Cart.Lines)
         {
+            <img src="@line.Product.Image" height="100" width="100" />
             <tr>
                 <td class="text-center">@line.Quantity</td>
                 <td class="text-left">@line.Product.Name</td>
                 <td class="text-right">@line.Product.Price.ToString("c")</td>
                 <td class="text-right">@((line.Quantity * line.Product.Price).ToString("c"))</td>
-            
+
                 <td>
                     <form asp-action="RemoveFromCart" method="post">
                         <input type="hidden" name="ProductID" value="@line.Product.ProductID" />

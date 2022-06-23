@@ -4,6 +4,11 @@
         <div class="card-body">
             <h3 class="card-title">
                 <strong>@Model.Name</strong>
+
+                <!--Queries the web image address inside of each item and displays it if possible-->
+                <strong class="float-right">
+                    <img src="@Model.Image" height="200" width="200" />
+                </strong>
             </h3>
 
             <p class="card-text lead">
@@ -13,6 +18,9 @@
             <span class="float-left bg-success text-white rounded m-2 p-1">
                 @Model.Price.ToString("c")
             </span>
+
+            
+            
 
             <form id="@Model.ProductID" asp-action="AddToCart" asp-controller="Cart" method="post" class="float-right m-2 p-1">
                 <input type="hidden" asp-for="ProductID" />
