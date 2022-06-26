@@ -2,37 +2,42 @@
 <!--Created a div container that matches the background color of the original site-->
 <!--Changed the coloring of the buttons to light in order to match the new category background-->
 <div class="container rounded" style="background-color: #31417E!important">
+    <!--A Placeholder spot for text searching through products titles-->
+    <form class="container">
+        <label for="prod">Search Product</label>
+        <input type="text" id="prod" name="prod" asp-action="List" />
+    </form>
     <a class="btn btn-outline-light btn-block m-2"
-    asp-action="List"
-    asp-controller="Product"
-    asp-route-category="">
+       asp-action="List"
+       asp-controller="Product"
+       asp-route-category="">
         All Products
     </a>
-    @foreach(string category in Model)
+
+
+    @foreach (string category in Model)
+    {
+        <a class="btn btn-outline-light btn-block m-2 @(category == ViewBag.SelectedCategory ?  "btn-primary":"btn-outline-light")"
+           asp-action="List"
+           asp-controller="Product"
+           asp-route-category="@category"
+           asp-route-page="1">
+
+            <!--Use this section to assign pictures to expected categories-->
+            @if (@category == "Printers")
             {
-                
-                <!--Figure out how to apply a picture to a selected category-->
-<a class="btn btn-outline-light btn-block m-2 @(category == ViewBag.SelectedCategory ?  "btn-primary":"btn-outline-light")"
-   asp-action="List"
-   asp-controller="Product"
-   asp-route-category="@category"
-   asp-route-page="1">
-
-    <!--Use this section to assign pictures to expected categories-->
-    @if (@category == "Printers")
-    {
-        <img src="~/Iconography/Categories/Cat_3D_Printer.png" width="100" height="100" />
-    }
-    @if (@category == "Materials")
-    {
-        <img src="~/Iconography/Categories/Cat_filament.png" width="100" height="100" />
-    }
-    @if (@category == "Parts")
-    {
-        <img src="~/Iconography/Categories/Cat_parts.png" width="100" height="100" />
-    }
-    @category
-
-</a>
+                <img src="~/Iconography/Categories/Cat_3D_Printer.png" width="100" height="100" />
             }
+            @if (@category == "Materials")
+            {
+                <img src="~/Iconography/Categories/Cat_filament.png" width="100" height="100" />
+            }
+            @if (@category == "Parts")
+            {
+                <img src="~/Iconography/Categories/Cat_parts.png" width="100" height="100" />
+            }
+            @category
+
+        </a>
+    }
 </div>

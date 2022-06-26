@@ -29,5 +29,7 @@ namespace SportsStore.Controllers
             },
             CurrentCategory = category
         });
+
+        //Needs a method here to display manual product searching
     }
 }
