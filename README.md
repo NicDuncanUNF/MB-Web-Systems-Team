@@ -6,28 +6,28 @@ and  new  user  registration,  product  catalog,  shopping  cart,  order  confir
 retrieval.
 
 2. A business background page that include details about business, mission, and executive board 
-members. [ABOUT US PAGE]
+members. [ABOUT US PAGE, CARLY]
 
 3. Details on business policies including cost of your products and/ or services provided by your 
-business; shipping policy and rates; tax policy; and return of merchandize policy. [POLICIES PAGE]
+business; shipping policy and rates; tax policy; and return of merchandize policy. [POLICIES PAGE, SEBASTIAN]
 
 4. In  the  FAQ  page,  create  at  least  10  questions  and  answers  regarding  the  company,  products, 
 ordering, and registration. The questions should be listed at the top of the page and each question 
 if possible, should have hyperlink to the corresponding answer within the document. If you are not 
-providing hyperlink then it can be a plain document having questions and answers. [FAQ PAGE]
+providing hyperlink then it can be a plain document having questions and answers. [FAQ PAGE, CARLY]
 
 5. In the products/services catalog page, display list of products/services and allow user to view 
 or  search  products/services  based  on  a  combination  of  attributes  (for  e.g.,  name,  category, 
 price, color, etc.). [PARTIALLY COMPLETE, NEEDS SEARCH]
 
 6. From the list of products/services displayed, users should be able to add the products/services 
-to a shopping cart. [COMPLETED]
+to a shopping cart. [COMPLETED, DEFAULT]
 
 7. The  shopping  cart  page  should  show  all  the  items  selected  for  purchase,  calculate  the  total 
 including taxes and shipping, and provide a link to confirm the order and make payment. The 
 payment  page  should  collect  the  user’s  full  name  and  credit  card  details  to  complete  the 
 transaction. For this project, there is no need to implement any payment processing with actual 
-credit card companies. [PARTIALLY COMPLETE, NEED TAXES]
+credit card companies. [COMPLETED, NIC]
 
 8. When the transaction is complete, show an order confirmation page. The order confirmation 
 page must store the order details in a database to be retrieved any time by the user. Once the 
