@@ -25,16 +25,22 @@ namespace SportsStore.Models
         
         public virtual decimal ComputeShipping()
         {
-            //Store policy dictates that orders above 35$ have free shipping
-            if(ComputeTotalValue() >= 35)
+            //Catch if the line collection is empty as there will be no products selected.
+            if (lineCollection.Count == 0)
             {
                 return 0;
             }
-            // Otherwise a 10$ shipping fee is applied
-            else
+            //If the total is in between 0 and 35,
+            if(ComputeTotalValue() < 35 && ComputeTotalValue() > 0)
             {
                 return 10;
             }
+            // If all other conditions are passed, the total for shipping will be 0
+            else
+            {
+                return 0;
+            }
+            
         }
         public virtual decimal ComputeTax()
         {

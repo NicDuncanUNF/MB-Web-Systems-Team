@@ -2,6 +2,7 @@
 <div class="">
     @if (Model.Lines.Count() > 0)
             {
+                <!--TODO made the border match the rest of the nav bar-->
                 <small class="navbar-text text-white border">
                     <b>Your cart:</b>
                     @Model.Lines.Sum(x => x.Quantity) items(s)
