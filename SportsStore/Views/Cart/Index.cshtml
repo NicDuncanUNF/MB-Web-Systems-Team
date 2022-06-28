@@ -36,9 +36,31 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="3" class="text-right">Total:</td>
+            <!--Call the original cart model cs to get the total calculated cart values-->
+            <td colspan="3" class="text-right">Sub Total:</td>
             <td class="text-right">
                 @Model.Cart.ComputeTotalValue().ToString("C")
+            </td>
+        </tr>
+        <tr>
+            <!--Get the total after tax is calculated (default 7%)-->
+            <td colspan="3" class="text-right">Tax(7%):</td>
+            <td class="text-right">
+                @Model.Cart.ComputeTax().ToString("C")
+            </td>
+        </tr>
+        <tr>
+            <!--Get the total shipping value (either 0 or 10)-->
+            <td colspan="3" class="text-right">Shipping:</td>
+            <td class="text-right">
+                @Model.Cart.ComputeShipping().ToString("C")
+            </td>
+        </tr>
+        <tr>
+            <!--Get the absolute total from the three aspects above-->
+            <td colspan="3" class="text-right">Total:</td>
+            <td class="text-right">
+                @Model.Cart.ComputeAbsoluteTotal().ToString("C")
             </td>
         </tr>
     </tfoot>

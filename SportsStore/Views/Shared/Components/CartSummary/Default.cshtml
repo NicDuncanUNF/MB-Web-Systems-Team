@@ -2,7 +2,7 @@
 <div class="">
     @if (Model.Lines.Count() > 0)
             {
-                <small class="navbar-text">
+                <small class="navbar-text text-white border">
                     <b>Your cart:</b>
                     @Model.Lines.Sum(x => x.Quantity) items(s)
                     @Model.ComputeTotalValue().ToString("c")

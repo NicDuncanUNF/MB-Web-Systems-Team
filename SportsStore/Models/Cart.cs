@@ -22,6 +22,32 @@ namespace SportsStore.Models
         }
         public virtual void RemoveLine(Product product) => lineCollection.RemoveAll(l => l.Product.ProductID == product.ProductID);
         public virtual decimal ComputeTotalValue() => lineCollection.Sum(e => e.Product.Price * e.Quantity);
+        
+        public virtual decimal ComputeShipping()
+        {
+            //Store policy dictates that orders above 35$ have free shipping
+            if(ComputeTotalValue() >= 35)
+            {
+                return 0;
+            }
+            // Otherwise a 10$ shipping fee is applied
+            else
+            {
+                return 10;
+            }
+        }
+        public virtual decimal ComputeTax()
+        {
+            //Multiplies the total by 7% to get the sales taxes, then returns it as a decimal type
+            double sub = ((double)ComputeTotalValue());
+            sub = sub * 0.07;
+            return ((decimal)sub); 
+        }
+        public virtual decimal ComputeAbsoluteTotal()
+        {
+            //Adds the sub total value with shipping and tax computations
+            return ComputeTotalValue() + ComputeShipping() + ComputeTax();
+        }
         public virtual void Clear() => lineCollection.Clear();
         public virtual IEnumerable<CartLine> Lines => lineCollection;
     }
