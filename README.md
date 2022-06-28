@@ -6,15 +6,15 @@ and  new  user  registration,  product  catalog,  shopping  cart,  order  confir
 retrieval.
 
 2. A business background page that include details about business, mission, and executive board 
-members.
+members. [ABOUT US PAGE]
 
 3. Details on business policies including cost of your products and/ or services provided by your 
-business; shipping policy and rates; tax policy; and return of merchandize policy.
+business; shipping policy and rates; tax policy; and return of merchandize policy. [POLICIES PAGE]
 
 4. In  the  FAQ  page,  create  at  least  10  questions  and  answers  regarding  the  company,  products, 
 ordering, and registration. The questions should be listed at the top of the page and each question 
 if possible, should have hyperlink to the corresponding answer within the document. If you are not 
-providing hyperlink then it can be a plain document having questions and answers.
+providing hyperlink then it can be a plain document having questions and answers. [FAQ PAGE]
 
 5. In the products/services catalog page, display list of products/services and allow user to view 
 or  search  products/services  based  on  a  combination  of  attributes  (for  e.g.,  name,  category, 
