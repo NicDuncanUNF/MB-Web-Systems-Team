@@ -1,8 +1,11 @@
 ﻿@model LoginModel
 @{
     ViewBag.Title = "Log In";
-    Layout = "_AdminLayout"; }
+    Layout = "_AdminLayout"; 
+}
+
 <div class="text-danger" asp-validation-summary="All"></div>
+
 <form asp-action="Login" asp-controller="Account" method="post">
     <input type="hidden" asp-for="ReturnUrl" />
     <div class="form-group">

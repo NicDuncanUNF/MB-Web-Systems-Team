@@ -2,11 +2,14 @@
 <!--Created a div container that matches the background color of the original site-->
 <!--Changed the coloring of the buttons to light in order to match the new category background-->
 <div class="container rounded" style="background-color: #31417E!important">
+    
     <!--A Placeholder spot for text searching through products titles-->
-    <form class="container">
+    <form class="container" asp-action="Search" asp-controller="Product" asp-route-name="name" method="post">
         <label for="prod" class="text-white">Search Product</label>
-        <input type="text" id="prod" name="prod" asp-action="List" />
+        <input/>
     </form>
+
+    <!--Reverts the product listing to simply show all products-->
     <a class="btn btn-outline-light btn-block m-2"
        asp-action="List"
        asp-controller="Product"
