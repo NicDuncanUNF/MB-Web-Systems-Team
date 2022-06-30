@@ -14,7 +14,7 @@ business; shipping policy and rates; tax policy; and return of merchandize polic
 4. In  the  FAQ  page,  create  at  least  10  questions  and  answers  regarding  the  company,  products, 
 ordering, and registration. The questions should be listed at the top of the page and each question 
 if possible, should have hyperlink to the corresponding answer within the document. If you are not 
-providing hyperlink then it can be a plain document having questions and answers. [FAQ PAGE, SEBASTIAN]
+providing hyperlink then it can be a plain document having questions and answers. [FAQ PAGE, SEBASTIAN - finished the layout need to figure out where to place it, update the background to match the rest of the website and add a few links to the other pages.]
 
 5. In the products/services catalog page, display list of products/services and allow user to view 
 or  search  products/services  based  on  a  combination  of  attributes  (for  e.g.,  name,  category, 
