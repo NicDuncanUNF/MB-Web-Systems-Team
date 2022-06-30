@@ -9,7 +9,7 @@ retrieval.
 members. [ABOUT US PAGE, CARLY]
 
 3. Details on business policies including cost of your products and/ or services provided by your 
-business; shipping policy and rates; tax policy; and return of merchandize policy. [POLICIES PAGE, SEBASTIAN]
+business; shipping policy and rates; tax policy; and return of merchandize policy. [POLICIES PAGE, SEBASTIAN - finished the layout need to figure out where to place it and update the background to match the rest of the website.]
 
 4. In  the  FAQ  page,  create  at  least  10  questions  and  answers  regarding  the  company,  products, 
 ordering, and registration. The questions should be listed at the top of the page and each question 
