@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<AppUser>
 @{
     ViewBag.Title = "User Accounts";
-    Layout = "_AdminLayout"; 
+    Layout = "_AdminLayout";
 }
 
 <div class="text-danger" asp-validation-summary="ModelOnly"></div>
@@ -40,4 +40,13 @@
 </table>
 
 <a class="btn btn-primary" asp-action="Create">Create</a>
-<a class="btn btn-primary" href="/Admin/Index/">Edit Products</a>
+
+<!--Buttons that go to different admin functions-->
+<div class="container">
+    <!--Connection to order admin page-->
+    <a class="btn btn-primary" href="/Account/Index/">Edit Accounts</a>
+    <!--Connection to order admin page-->
+    <a class="btn btn-primary" href="/Admin/Index/">Edit Products</a>
+    <!--Connection to order admin page-->
+    <a class="btn btn-primary" href="/Order/List/">Edit Orders</a>
+</div>

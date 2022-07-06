@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Product>
-@{ 
+@{
     ViewBag.Title = "All Products";
     Layout = "_AdminLayout";
 }
@@ -21,7 +21,7 @@
                     <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-productId="@item.ProductID">
                         Edit
                     </a>
-                    <input type="hidden" name="ProductID" value="@item.ProductID"/>
+                    <input type="hidden" name="ProductID" value="@item.ProductID" />
                     <button type="submit" class="btn btn-danger btn-sm">
                         Delete
                     </button>
@@ -33,6 +33,12 @@
 <div class="text-center">
     <a asp-action="Create" class="btn btn-primary">Add Product</a>
 </div>
-<div>
+<!--Buttons that go to different admin functions-->
+<div class="container">
+    <!--Connection to order admin page-->
     <a class="btn btn-primary" href="/Account/Index/">Edit Accounts</a>
+    <!--Connection to order admin page-->
+    <a class="btn btn-primary" href="/Admin/Index/">Edit Products</a>
+    <!--Connection to order admin page-->
+    <a class="btn btn-primary" href="/Order/List/">Edit Orders</a>
 </div>
