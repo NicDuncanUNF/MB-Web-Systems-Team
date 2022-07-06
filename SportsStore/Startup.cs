@@ -57,19 +57,23 @@ namespace SportsStore
             app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes => {
-                    routes.MapRoute(
-                            name: null,
-                            template:"{category}/Page{page:int}", 
-                            defaults: new { Controller = "Product", action = "List"});
-                    routes.MapRoute(
-                            name: null,
-                            template: "Page{page:int}",
-                            defaults: new { Controller = "Product", action = "List" });
-                    routes.MapRoute(
-                            name: null,
-                            template: "{category}",
-                            defaults: new { Controller = "Product", action = "List" });
-                    routes.MapRoute(
+            routes.MapRoute(
+                    name: null,
+                    template: "{category}/Page{page:int}",
+                    defaults: new { Controller = "Product", action = "List" });
+            routes.MapRoute(
+                    name: null,
+                    template: "Page{page:int}",
+                    defaults: new { Controller = "Product", action = "List" });
+            routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new { Controller = "Product", action = "List" });
+            routes.MapRoute(
+                name: null,
+                template: "Page{page:int}",
+                defaults: new {  Controller = "Product", action = "Search"});
+            routes.MapRoute(
                             name: null,
                             template: "",
                             defaults: new { Controller = "Product", action = "List" });

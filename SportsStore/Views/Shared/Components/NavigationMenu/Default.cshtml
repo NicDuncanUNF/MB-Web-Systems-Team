@@ -4,9 +4,17 @@
 <div class="container rounded" style="background-color: #31417E!important">
     
     <!--A Placeholder spot for text searching through products titles-->
-    <form class="container" asp-action="Search" asp-controller="Product" asp-route-name="name" method="post">
-        <label for="prod" class="text-white">Search Product</label>
-        <input/>
+    <!--
+    <form class="container" method="post" asp-action="Search" asp-controller="Product" asp-route-name="name">
+        <label for="name">Product Search</label>
+        <input type="text" name="name"/>
+        <input type="submit" />
+    </form>
+    -->
+    <form class="container" method="get" asp-action="Search" asp-controller="Product" asp-route-name="" asp-route-page="">
+        <label>Search for a Product</label>
+        <input id="Search" name="Search"/>
+        <input type="submit" value="Search" class="btn btn-primary" />
     </form>
 
     <!--Reverts the product listing to simply show all products-->

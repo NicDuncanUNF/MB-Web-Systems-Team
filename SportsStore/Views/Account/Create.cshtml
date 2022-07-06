@@ -23,9 +23,11 @@
 
     <div class="form-group">
         <div class="col-sm-offset-2">
-            <button type="submit" class="btn btn-primary">Create</button>
-            <button type="reset" class="btn btn-primary">Reset</button>
-            <a asp-action="Index" class="btn btn-primary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <!--Returns the user back to the login page-->
+            <a class="btn btn-primary" href="/Account/Login">Log in to an existing account</a>
+            <!--Cancel button takes you back to the store-->
+            <a class="btn btn-primary" href="/Product/List/">Cancel</a>
         </div>
     </div>
 </form>

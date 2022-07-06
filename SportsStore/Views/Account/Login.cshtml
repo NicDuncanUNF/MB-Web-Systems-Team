@@ -18,5 +18,11 @@
         <div><span asp-validation-for="Password" class="text-danger"></span></div>
         <input asp-for="Password" class="form-control" />
     </div>
-    <button class="btn btn-primary" type="submit">Log In</button>
+    <div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+        <!--link to the create account page should they not have a log in-->
+        <a class="btn btn-primary" href="/Account/Create">Create Account Instead</a>
+        <!--Cancel button takes you back to the store-->
+        <a class="btn btn-primary" href="/Product/List/">Cancel</a>
+    </div>
 </form>

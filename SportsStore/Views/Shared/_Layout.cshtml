@@ -1,11 +1,10 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css"/>
     <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css"/>
-    <title>Matterhackers</title>
+    <title>Matterhackers Store</title>
 </head>
 <body>
     <!--Used !important tag to enforce the color change-->
@@ -13,25 +12,17 @@
         <!--Made the logo and title float left while the Cart Summary button floats right-->
         <div class="float-left">
             <!--Referenced the stache of added icons stored on the iconography folder-->
-            <!--TODO Clicking the logo should take you back to the home screen-->
+            <!--TODO Clicking the logo should take you back to the home screen, replace # with a link-->
             <img src="~/Iconography/MH_Logo.png" height="100" width="100">
             <a class="navbar-brand text-white" href="#">Matterhackers</a>
         </div>
-        <!--Button that takes user to the Home Page page TODO-->
+        <!--Button that takes user to the Home Page where they can also access the FAQ, About us, and Policies pages TODO-->
         <div class="float-right">
-            <button class="btn btn-outline-light btn-block" onclick="">Home</button>
+            <a class="navbar-brand text-white btn btn-primary" href="#">Home</a>
         </div>
-        <!--Button that takes user to FAQ page TODO-->
+        <!--Call the login page-->
         <div class="float-right">
-            <button class="btn btn-outline-light btn-block" onclick="">FAQ</button>
-        </div>
-        <!--Button that takes use to About Us TODO-->
-        <div class="float-right">
-            <button class="btn btn-outline-light btn-block" onclick="">About Us</button>
-        </div>
-        <!--Button that takes use to Policies page TODO-->
-        <div class="float-right">
-            <button class="btn btn-outline-light btn-block" onclick="">Policies</button>
+            <a class="navbar-brand text-white btn btn-primary" href="/Account/Login">Log in</a>
         </div>
         <div class="float-right">
             @await Component.InvokeAsync("CartSummary")
